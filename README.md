@@ -12,11 +12,11 @@ Modeling transit accessibility and its calculation in C++ based on real big tran
       28432,182设计园,高峰专线79路,511835.503604000030000,2505117.958999999800000
       23479,182设计园,M224路,511861.122760000000000,2505123.656669999900000
       ...  
-  Output:  
-      mergedStation-itsLine-Xcoordinate-Ycoordinate  
-      182设计园a,高峰专线79路,511841.086319,2505127.930617
-      182设计园b,M346路,511855.384055,2505125.553275
-      ...
+    Output:  
+        mergedStation-Line-Xcoordinate-Ycoordinate  
+        182设计园a,高峰专线79路,511841.086319,2505127.930617
+        182设计园b,M346路,511855.384055,2505125.553275
+        ...
 
 
 # 2.Get the duration time for every single trip
