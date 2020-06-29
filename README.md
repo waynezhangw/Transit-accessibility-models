@@ -28,6 +28,17 @@ Modeling transit accessibility and its calculation in C++ based on real big tran
       ...
 
 
+# 3.Merge those single grids(cells) to group of cells(GOCs)  
+    Input:
+        streets data;
+        mergedStation records;
+        all the original 100x100m grids;
+    Output:
+        merged GOCs and their owning stations;
+
+# 4.Calculating transit accessibility based on GOCs
+    Input:
+
 # To be continued...  
 
 
