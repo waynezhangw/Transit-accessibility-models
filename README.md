@@ -38,8 +38,12 @@ Modeling transit accessibility and its calculation in C++ based on real big tran
 
 # 4.Calculating transit accessibility based on GOCs
     Input:
-
-# To be continued...  
+        trip records;
+        merged GOCs;
+        other compared records;
+    Output:
+        the accessibility values;
+ 
 
 
 
