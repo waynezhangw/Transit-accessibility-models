@@ -1,0 +1,17 @@
+该项目是早期做的，代码风格不太规范，注释也是中文为主，在hub上仅做记录
+
+实验涉及到的主要项目4个，执行的时候也是按照1->2->3->4的顺序执行，
+实验环境是VS2010和ArcGIS10.4.1，VS2010中主要是跑实验的结果，ArcGIS中主要是将结果可视化
+这4个project需要用到的读入文件都放在各个project的目录下面了，有些不好放的如trip数据之类的暂时没放
+
+1.Merge_BusStops：这个是对原始4万多个站点进行聚类的project，输入：busstops.csv；输出：merge_BusStation.csv
+
+2.SZ_calculateDuration：这个是计算所有trip逗留时间的project，输入：trip数据（放了个示例数据1000条）、merge_BusStation.csv；输出：每条trip的逗留时间
+
+3.SZ_Accessibility：这个是建立格网、合并格网得到18108分区的project，输入：街道路网数据、站点数据、原始所有100*100格网的编号；输出：合并后的GOC（就1.8万那个）以及GOC拥有的站点个数、名称等信息
+
+4.SZ_calculateAccessibility：这个是在得到GOC后开始计算positive可达，理论可达等信息的project，
+    Trip.cpp的输入：trip数据、merge_BusStation.csv、每个站点最近的格网编号与距离
+    Theory.cpp的输入：168个地铁站点(计算中心性)、关内范围数据、各GOC的理论的出行时间数据
+    District.cpp的输入：GOCs的类别编号
+    输出：各个GOC的positive可达、理论可达等信息
